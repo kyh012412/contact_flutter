@@ -14,11 +14,12 @@ class MyApp extends StatelessWidget {
       // 위젯 짜깁기
       home:Scaffold(
         appBar: AppBar(
+          foregroundColor: Colors.white,
           backgroundColor: Colors.blue,
-          title: Text('앱임',style: TextStyle(color: Colors.white)),
+          title: Text('앱임'),
         ),
         body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Icon(Icons.star),
@@ -27,13 +28,19 @@ class MyApp extends StatelessWidget {
           ],
         ),
         bottomNavigationBar: BottomAppBar(
-          child: Row(
-            children: [Icon(Icons.phone),Icon(Icons.message),Icon(Icons.contact_page)],
+          child: SizedBox(
+            height: 100,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Icon(Icons.phone),
+                Icon(Icons.message),
+                Icon(Icons.contact_page)
+              ],
             ),
           ),
-
-      )
-      //Container( width: 50, height:50, color:Colors.blue)
+        ),
+      )      //Container( width: 50, height:50, color:Colors.blue)
     );
   }
 }
