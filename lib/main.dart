@@ -12,7 +12,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp( //디자인 하는 법
       // Flutter에서 앱 디자인 넣는 법:
       // 위젯 짜깁기
-      home:Text('안녕')
+      home:Center(
+        child: Container( width: 50, height:50, color:Colors.blue)
+      )
+      //Container( width: 50, height:50, color:Colors.blue)
     );
   }
 }
+/*
+Text('text')
+Icon(Icons.star)
+Icon(Icons.shop) //아이콘이름은 플러터홈페이지에
+Image.asset('assets/로부터의 경로') pubspec.yaml에 이미지 등록이 필요
+Container( width: 50, height:50, color:Colors.blue) //네모박스 넣을 때
+50이라는 숫자는 단위가 LP임 50LP== 대략 1.2cm
+SizedBox() //네모박스 넣을 때
+ */
