@@ -28,7 +28,6 @@ class MyApp extends StatelessWidget {
         ),
         bottomNavigationBar: BottomAppBar(
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [Icon(Icons.phone),Icon(Icons.message),Icon(Icons.contact_page)],
             ),
           ),
